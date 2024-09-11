@@ -16,29 +16,8 @@ body {
     position: relative;
 }
 
-.gallery-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5px;
-    z-index: 1;
-    opacity: 0.2;
-}
-
-.gallery-image {
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(50%);
-    height: 100%;
-}
-
 .card {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: #ffffff;
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -47,7 +26,6 @@ body {
     max-width: 400px;
     width: 100%;
     position: relative;
-    z-index: 2;
 }
 
 .card:hover {
@@ -55,12 +33,12 @@ body {
 }
 
 .profile-image {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 4px solid #333;
+    transition: transform 0.3s ease-in-out;
 }
 
 h1 {
